@@ -1,0 +1,47 @@
+### get all list of cars 
+GET http://localhost:3001/api/cars
+
+### get all the avaliale cars 
+GET http://localhost:3001/api/avaliable/cars/A
+
+
+### filter the list of the cars 
+GET http://localhost:3001/api/cars/filter/A
+
+### get all categories
+GET http://localhost:3001/api/categories
+
+### create new task
+POST http://localhost:3001/api/addrental
+
+Content-Type: application/json
+
+{ "userid": 2, "start_date": "09-05-2021", "end_date": "10-05-2021", "category": "A" , "miles": 10, "driver_age" :19,"extra_drivers": 1, "insurance": "Yes" , "rental_price": 100 }
+
+
+### get all pastbooking 
+GET http://localhost:3001/api/PastBooking
+
+### get all todaybooking 
+GET http://localhost:3001/api/TodayBooking
+
+### get all todaybooking 
+GET http://localhost:3001/api/FutureBooking
+
+
+### delete task given the ID
+ DELETE http://localhost:3001/api/deleterental/25
+
+
+### get total purchase of a customer 
+GET http://localhost:3001/api/customer/2
+
+
+
+
+# ### update task given the ID
+# PUT http://localhost:3001/api/updatetask/11
+# Content-Type: application/json
+
+# { "description": "Cook Pasta", "important": false, "private": true, "deadline": "2022-05-10" , "completed": 0, "user" :1 }
+
